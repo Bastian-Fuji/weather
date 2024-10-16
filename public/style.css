@@ -1,0 +1,114 @@
+/* 全体のスタイル */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* タイトルを中央揃えし、折り返しを許容 */
+h1 {
+    font-size: 1.8rem; /* フォントサイズを調整 */
+    color: #4A90E2;
+    margin-bottom: 20px;
+    text-align: center;
+    word-break: break-word; /* 単語ごとに改行を許可 */
+}
+
+/* コンテナの幅を調整して折り返しを許容 */
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 90%; /* コンテナ幅を調整し、折り返しを許容 */
+    width: 350px;
+    margin: 0 auto;
+}
+
+/* 説明文のスタイル */
+p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* 入力フォームのスタイル */
+input[type="text"] {
+    width: calc(100% - 30px); /* ボタンと幅を揃える */
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    transition: border 0.3s ease;
+    box-sizing: border-box; /* 幅の計算を含める */
+}
+
+input[type="text"]:focus {
+    border: 2px solid #4A90E2;
+    outline: none;
+}
+
+/* ボタンのスタイル */
+button {
+    width: calc(100% - 30px); /* 入力フィールドと同じ幅に調整 */
+    padding: 15px;
+    background-color: #4A90E2;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box; /* 幅の計算を含める */
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+/* 結果表示のスタイル */
+.weather-info {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 20px;
+}
+
+a {
+    display: block;
+    margin-top: 20px;
+    color: #4A90E2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 450px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    input[type="text"], button {
+        font-size: 0.9rem;
+        width: 100%; /* スマートフォンでは100%に */
+    }
+}

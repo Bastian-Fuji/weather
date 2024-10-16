@@ -1,0 +1,9 @@
+# node_modulesフォルダを無視
+node_modules/
+
+# 環境変数ファイルを無視
+.env
+
+# 他に無視したいファイルがあれば追記
+*.log
+*.tmp
